@@ -1,7 +1,7 @@
-# node-red-contrib-pccc
+# depaula-contrib-ur20fbc-eip
 
-A Node-RED node to interact with some Allen-Bradley PLCs using PCCC protocol.
-Based on the awesome work of [plcpeople/nodepccc](https://github.com/plcpeople/nodepccc).
+A Node-RED node to interact with UR20-FBC-EIP with Ethernet/IP Protocol.
+Based on the awesome work of [plcpeople/depaula_eip](https://github.com/plcpeople/depaula_eip).
 
 
 ## Installing
@@ -10,12 +10,12 @@ You can install this node directly from the "Manage Palette" menu in the Node-RE
 
 Alternatively, run the following command in your Node-RED user directory - typically `~/.node-red` on Linux or `%HOMEPATH%\.nodered` on Windows
 
-        npm install node-red-contrib-pccc
+        npm install depaula-contrib-ur20fbc-eip
 
 
 ## Usage
 
-Just drop a `pccc in` node to read and watch addresses of the PLC, or a `pccc out` node to write values to the PLC. Both of them need a `pccc endpoint`, where you can configure the address of the PLC (IP Address, port, and routing), the cycle time and timeout values, and the list of addresses available on the PLC.
+Just drop a `depaula_eip in` node to read and watch addresses of the UR20-FBC-EIP, or a `depaula_eip out` node to write values to the UR20-FBC-EIP. Both of them need a `depaula_eip endpoint`, where you can configure the address  (IP Address, port, and routing), the cycle time and timeout values, and the list of addresses available on the FBC-Coupler.
 
 
 ### Addressing
@@ -24,7 +24,7 @@ The addresses follow the same syntax of what would be used on RSLogix, so for ex
 
 
 ### About routing
-
+In case to use with PLC follow down information.  ( ( not implemented yet !!! ) ) 
 The configuration of routing follows a very special syntax for now
 
     0x01,0x00,0x01,0x00
